@@ -8,10 +8,24 @@ function getRandom(max = 10, min = 0) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+function getRandomArray(count = 10, max = 10, min = 0) {
+  const arr = [];
+  for (let i = 0; i < count; i++) {
+    let r = getRandom(max, min);
+    if (arr.includes(r)) {
+      i -= 1;
+    } else {
+      arr.push(r);
+    }
+  }
+  return arr;
+}
+
 function pickProxies(allProxies, count = 10) {
   const proxies = [];
-  for (let i = 0; i < count; i++) {
-    proxies.push(allProxies[getRandom(allProxies.length - 1)]);
+  const randomArr = getRandomArray(count, allProxies.length - 1);
+  for (const i of randomArr) {
+    proxies.push(allProxies[i]);
   }
   return proxies;
 }
