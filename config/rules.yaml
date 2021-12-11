@@ -4,5 +4,5 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,qq.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.com,🚀 节点选择
+  - DOMAIN-SUFFIX,bilibili.com,🔰 节点选择
   - DOMAIN-SUFFIX,sf-express.com,🎯 全球直连
